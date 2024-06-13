@@ -1,0 +1,54 @@
+Bar Chart: Top Genres
+
+This chart will visually represent the query that identified the most popular genres.
+On the X-axis, list the genres.
+On the Y-axis, represent the number of shows for each genre (use the number_of_shows column from your query result).
+Use bar heights to depict the relative popularity of each genre (higher bar = more shows).
+Pie Chart: Distribution by Country (Optional - If your data includes country information):
+
+This chart will show the distribution of shows across different countries.
+Each slice of the pie represents a country.
+The size of the slice corresponds to the number of shows produced by that country (use the number_of_shows column from your query result).
+If your data doesn't have a "country" column, you can skip this chart or create another one based on a different finding.
+Bar Chart (or Line Chart): Average Seasons per Release Year (Optional):
+
+This chart (optional) can explore how the average number of seasons per show varies across release years.
+On the X-axis, represent the release years of the shows.
+On the Y-axis, represent the average number of seasons for shows released in that year (you might need to calculate this using a pivot table or helper functions in Excel).
+A bar chart shows the average seasons for each year, while a line chart can indicate any trends over time.
+5. Presentation Pitch Deck (Slides):
+
+Slide 1: Introduction
+
+Title: Unveiling Netflix Shows: A Data Exploration Journey
+Briefly introduce the Netflix Shows dataset and its potential for revealing interesting trends about content on the platform.
+State your goals: exploring the data to discover hidden insights using SQL queries and data visualization.
+Slide 2: Import Process & Interesting Finding
+
+Briefly describe the process of importing the Netflix Shows data into your chosen environment (e.g., MySQL Workbench).
+Mention an initial interesting observation you made about the data (e.g., a surprisingly high number of shows in a particular genre, dominance of a specific country in show production).
+Slide 3 & 4: Cool Facts
+
+Slide 3: Title: Unveiling Popular Genres on Netflix
+
+Present the SQL query you used to find the most popular genre.
+Display a bar chart (from Section 4) showing the distribution of shows across genres, highlighting the top genre.
+Slide 4: Title: Average Seasons per Show
+
+Present the SQL query you used to calculate the average number of seasons per show.
+Mention the average you discovered (e.g., The average number of seasons per show on Netflix is X).
+Slide 5 & 6: Questions & Learnings
+
+Slide 5: Title: Unveiling Top Show-Producing Countries (Optional - If applicable)
+
+Present the SQL query you used to identify the top 5 countries producing Netflix shows.
+Briefly explain what the results reveal (e.g., The top 5 countries are X, Y, Z, indicating a strong presence of these countries in Netflix content creation).
+Slide 6: Title: Documentary Show Popularity
+
+Present the SQL query you used to find the number of documentary shows on Netflix.
+Mention the number you discovered (e.g., There are X documentary shows on Netflix).
+Discuss what this finding suggests about viewer preferences or Netflix's content strategy.
+Slide 7: Charts & Meaning
+
+Briefly explain the purpose of each chart you created (refer back to Section 4).
+Highlight the key takeaways from each chart (e.g., the dominance of a particular genre, the distribution of shows across countries).
