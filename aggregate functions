@@ -1,0 +1,32 @@
+2. Data Fun (20 pts)
+Cool Fact 1: Average Duration of Movies vs. TV Shows
+-- Average duration of movies
+SELECT AVG(duration) AS avg_movie_duration
+FROM netflix_shows
+WHERE type = 'Movie';
+
+-- Average duration of TV shows
+SELECT AVG(duration) AS avg_tv_show_duration
+FROM netflix_shows
+WHERE type = 'TV Show';
+Cool Fact 2: Most Popular Categories
+
+To determine the most popular categories (genres) based on the number of shows:
+SELECT listed_in, COUNT(*) AS num_shows
+FROM netflix_shows
+GROUP BY listed_in
+ORDER BY num_shows DESC
+LIMIT 5;
+3. Ask Away (30 pts)
+Question 1: What are the top 5 countries with the most Netflix shows?
+SELECT country, COUNT(*) AS num_shows
+FROM netflix_shows
+GROUP BY country
+ORDER BY num_shows DESC
+LIMIT 5;
+Question 2: What are the oldest TV shows available on Netflix (sorted by release year)?
+SELECT title, release_year
+FROM netflix_shows
+WHERE type = 'TV Show'
+ORDER BY release_year ASC
+LIMIT 10;
